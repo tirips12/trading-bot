@@ -1,0 +1,33 @@
+# Trading Bot Configuration
+binance:
+  api_key: "YOUR_API_KEY"
+  api_secret: "YOUR_API_SECRET"
+  use_testnet: true
+
+trading:
+  leverage: 20
+  default_symbol: "BTCUSDT"
+  order_size: 0.05
+  stop_loss_pct: 0.20     # Tighter stop to limit bad trades
+  take_profit_pct: 0.40   # Hit more TPs and lock gains faster
+  fee: 0.0004
+  slippage: 0.0002
+
+strategy:
+  ema_fast: 9             # Slightly smoother
+  ema_slow: 26            # Traditional pair
+  min_atr: 1.5            # Allow calmer zones = fewer fakeouts
+  trade_start_hour: 6
+  trade_end_hour: 22
+
+risk:
+  max_daily_loss_pct: 5.0
+  max_trade_loss_pct: 1.0
+
+backtest:
+  start_date: "2024-01-01"
+  end_date: "2024-03-01"
+  initial_balance: 1000
+
+logging:
+  level: "INFO"
