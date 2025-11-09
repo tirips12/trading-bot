@@ -19,4 +19,4 @@ A modular, risk-controlled crypto trading bot for Binance Futures. Features:
 
 ## Notes
 - Start with testnet keys for safety
-- For questions or improvements, open an issue or PR
+- Work on hold.
